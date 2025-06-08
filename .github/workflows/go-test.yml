@@ -10,12 +10,12 @@ jobs:
   test:
     runs-on: ubuntu-latest
 
-    setps:
+    steps:
       - name: checkout code
-        users: actions/checkout@v3
+        uses: actions/checkout@v3
 
       - name: setup go lang
-        users: actions/setup-go@v4
+        uses: actions/setup-go@v4
         with:
           go-version: "1.23.4"
 
